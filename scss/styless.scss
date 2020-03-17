@@ -1,4 +1,5 @@
 @import 'layout', 'icomoon';
+*{font-family: 'Raleway', sans-serif;}
 h1{text-align: center;}
 body {
     background-color: #2f3640;
@@ -6,7 +7,7 @@ body {
 }
 .card {
     background-color: #fff;
-    color: #192a56;
+    color: #000;
     border-radius: .4em;
     padding: 1em;
 }
@@ -14,9 +15,10 @@ body {
     background: #353b48;
     transition: all 0.3s;
     color: #fff;
+    padding: .15em;
     text-decoration: none;
-    border: 0;
-    border-radius: .2em;
+    border: 0.5;
+    border-radius: 1.2em;
 }
 img {
     max-width: 100%;
@@ -35,12 +37,12 @@ img {
 .mybutton {
     background: #353b48;
     color: #fff;
-    border: 0;
+    border: 0.5;
     font-size: 0.75em;
     margin: .3em 0;
     cursor: pointer;
     transition: all 0.3s;
-    border-radius: .2em;
+    border-radius: 1.2em;
     height: auto;
     box-shadow: 0 0 transparent inset;
 } 
