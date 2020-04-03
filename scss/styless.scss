@@ -1,9 +1,35 @@
-@import 'layout', 'icomoon';
+@import 'layout', 'icomoon','slide';
 *{font-family: 'Raleway', sans-serif;}
 h1{text-align: center;}
-body {
+body { 
     background-color: #2f3640;
     color: #fff;
+}
+.ad{
+    //animation: mymove1 5s infinite;
+    left: -250px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+ 
+    animation-duration: 10s;
+  }
+  @keyframes example {
+    0%   {left:500px; top:0px;}
+    100% {left:-500px; top:0px;}
+}
+.ad1 *{
+    left: 0;
+    position: relative;
+    animation-name: example;
+    color: #fff;
+    text-decoration: none;
+    animation-duration: 3s;
+  }
+  @keyframes example {
+    0%   {left:500px; top:0px;}
+    100% {left:250; top:0px;}
 }
 .card {
     background-color: #fff;
