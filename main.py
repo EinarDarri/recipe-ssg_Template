@@ -20,6 +20,7 @@ POSTS = {
 env = Environment(loader=PackageLoader('main', 'templates'))
 index_template = env.get_template('index.html')
 bread_template = env.get_template('bread.html')
+forum_template = env.get_template('forum.html')
 post_template = env.get_template('post.html')
 
 posts_metadata = [POSTS[post].metadata for post in POSTS]
@@ -27,9 +28,13 @@ tags = [post['tags'] for post in posts_metadata]
 bread_html = bread_template.render(posts=posts_metadata, tags=tags)
 
 index_html = index_template.render()
+forum_html = forum_template.render()
 
 with open ('../resipies_Template/index.html','w',encoding='utf-8') as file:
-    file.write(index_html)   
+    file.write(index_html)
+
+with open ('../resipies_Template/forum.html','w',encoding='utf-8') as file:
+    file.write(forum_html)      
 
 with open('../resipies_Template/bread.html', 'w') as file:
     file.write(bread_html)

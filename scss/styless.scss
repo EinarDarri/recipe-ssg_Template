@@ -4,7 +4,7 @@ h1{text-align: center;}
 body { 
     background-color: #2f3640;
     color: #fff;
-}
+} 
 .ad{
     //animation: mymove1 5s infinite;
     left: -250px;
@@ -61,6 +61,7 @@ img {
 }
  
 .mybutton {
+    text-align: center;
     background: #353b48;
     color: #fff;
     border: 0.5;
@@ -71,4 +72,14 @@ img {
     border-radius: 1.2em;
     height: auto;
     box-shadow: 0 0 transparent inset;
-} 
+}
+.paddin{
+    padding-left:5em;
+}
+table {
+    padding-left: 20em;
+    color : #fff;
+}
+table td {
+    border: solid #b2bec3;
+}
